@@ -1,4 +1,7 @@
+"use client"; // Required for animations and interactivity
+
 import React from 'react';
+import CountUp from './CountUp'; // Import the animation component
 
 const YouthStatistics = () => {
   const currentYear = new Date().getFullYear();
@@ -19,13 +22,17 @@ const YouthStatistics = () => {
       <div className="purok-stats-grid">
         {purokData.map((purok) => (
           <div key={purok.name} className="purok-stat-item">
-            <div className="purok-stat-count">{purok.count}</div>
+            <div className="purok-stat-count">
+              <CountUp end={purok.count} />
+            </div>
             <div className="purok-stat-name">{purok.name}</div>
           </div>
         ))}
       </div>
       <div className="total-youth-population">
-        <div className="total-youth-count">{totalYouth}</div>
+        <div className="total-youth-count">
+          <CountUp end={totalYouth} />
+        </div>
         <div className="total-youth-label">Total Population of Youth</div>
       </div>
     </div>

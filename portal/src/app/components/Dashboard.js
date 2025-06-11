@@ -8,7 +8,8 @@ export default function Dashboard() {
     <div className="dashboard-container">
       <About />
       <MissionVision />
-      <YouthStatistics /> {/* Add the new component here */}
+      <hr className="section-separator" />
+      <YouthStatistics />
     </div>
   );
 }

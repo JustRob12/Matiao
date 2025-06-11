@@ -8,7 +8,7 @@ export default function MissionVision() {
           <h4>VISION</h4>
         </div>
         <div className="card-body">
-          <p>A university of excellence, innovation and inclusion.</p>
+          <p>A united and empowered youth of Barangay Matiao, committed to community growth and positive change.</p>
         </div>
       </div>
       <div className="vision-mission-card">
@@ -17,7 +17,7 @@ export default function MissionVision() {
         </div>
         <div className="card-body">
           <ul>
-            <li>To elevate knowledge generation, utilization and distribution.</li>
+            <p>To develop responsible, skilled, and proactive youth through inclusive programs, leadership opportunities, and community service.</p>
           </ul>
         </div>
       </div>

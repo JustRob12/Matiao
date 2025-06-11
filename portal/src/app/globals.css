@@ -294,6 +294,15 @@ a {
   color: #0011ff; /* Darker text for label */
 }
 
+/* === Section Separator === */
+.section-separator {
+  border: 0;
+  height: 4px; /* Increased thickness */
+  background-color: #003366; /* Dark blue color */
+  margin: 0rem 0; /* Increased vertical space */
+  border-radius: 1%; /* Slightly rounded edges */
+}
+
 /* Adjustments for responsive grid on smaller screens if needed */
 @media (max-width: 768px) {
   .statistics-main-title {
