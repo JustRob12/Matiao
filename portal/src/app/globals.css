@@ -96,12 +96,46 @@ a {
 
 /* === Main Content Layout === */
 .dashboard-container {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 1160px;
+  margin: 1rem auto;
+  padding: 0 0rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.about-mission-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+
+.about-section {
+  flex: 3 1 0%;
+  min-width: 0;
+}
+
+.mission-vision-side {
+  flex: 2 1 0%;
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.mission-vision-container {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .about-mission-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .mission-vision-side, .about-section {
+    width: 100%;
+    min-width: 0;
+  }
 }
 
 /* === About Section === */
@@ -147,6 +181,7 @@ a {
 /* === Mission & Vision Section === */
 .mission-vision-container {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   width: 100%;
 }
@@ -300,7 +335,96 @@ a {
   height: 4px; /* Increased thickness */
   background-color: #003366; /* Dark blue color */
   margin: 0rem 0; /* Increased vertical space */
-  border-radius: 1%; /* Slightly rounded edges */
+  border-radius: 1px; /* Slightly rounded edges */
+}
+
+/* === Projects Section === */
+.projects-section {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.projects-title {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 2rem;
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  transition: box-shadow 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.project-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.project-card-title {
+  font-size: 1.2rem;
+  color: #003366;
+  margin: 0.5rem 0 0.25rem 0;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+}
+.project-card-desc {
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.project-card-date {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 1.1rem;
+  padding-left: 0.5rem;
+}
+.project-see-more {
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.project-see-more:hover {
+  background: #001f4d;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 /* Adjustments for responsive grid on smaller screens if needed */
