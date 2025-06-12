@@ -427,6 +427,97 @@ a {
   }
 }
 
+/* === Youth Portal Registration Form === */
+.youth-portal-header {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #003366;
+  padding: 2.2rem 0 1.2rem 0;
+  text-align: center;
+}
+.youth-portal-title {
+  font-size: 2.2rem;
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* Remove old container styles */
+.youth-portal-form-container {
+  all: unset;
+}
+
+.youth-portal-title {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.youth-portal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 540px;
+  margin: 2.5rem auto 4rem auto;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0 1.5rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.form-group label {
+  font-weight: 500;
+  color: #003366;
+  margin-bottom: 0.2rem;
+}
+.youth-portal-form input[type="text"],
+.youth-portal-form input[type="date"],
+.youth-portal-form input[type="email"],
+.youth-portal-form input[type="tel"],
+.youth-portal-form select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.youth-portal-form input:focus,
+.youth-portal-form select:focus {
+  border: 1.5px solid #003366;
+}
+.youth-portal-submit {
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  transition: background 0.18s;
+}
+.youth-portal-submit:hover {
+  background: #001f4d;
+}
+.image-picker-group input[type="file"] {
+  margin-top: 0.2rem;
+}
+.profile-preview {
+  margin-top: 0.6rem;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #003366;
+}
+
 /* Adjustments for responsive grid on smaller screens if needed */
 @media (max-width: 768px) {
   .statistics-main-title {

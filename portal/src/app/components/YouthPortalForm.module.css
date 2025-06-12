@@ -1,0 +1,79 @@
+.youthPortalForm {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+.formRow {
+  margin-bottom: 1.2rem;
+}
+.threeCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem 2rem;
+}
+.fourCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.2rem 2rem;
+}
+.twoCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 2rem;
+}
+.formGroup label {
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+  display: block;
+  color: #003366;
+}
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #b8c6d1;
+  font-size: 1rem;
+  margin-top: 0.15rem;
+  background: #f8fafd;
+  transition: border 0.2s;
+}
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border: 1.5px solid #5dade2;
+  background: #fff;
+}
+.formGroupTextarea textarea {
+  min-height: 56px;
+  resize: vertical;
+}
+.imagePickerGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.profilePreview {
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border: 2px solid #5dade2;
+}
+@media (max-width: 900px) {
+  .youthPortalForm {
+    padding: 1.2rem 0.5rem;
+  }
+  .threeCols,
+  .fourCols,
+  .twoCols {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

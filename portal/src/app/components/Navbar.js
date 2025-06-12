@@ -6,7 +6,7 @@ export default function Navbar() {
       <ul className="navbar-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Administration</a></li>
-        <li><a href="#">Youth Portal</a></li>
+        <li><a href="/youth-portal">Youth Portal</a></li>
       </ul>
     </nav>
   );
